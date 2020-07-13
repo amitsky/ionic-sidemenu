@@ -10,7 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  navigate : any;
+  navigate: any;
 
   constructor(
     private platform: Platform,
@@ -29,30 +29,34 @@ export class AppComponent {
     });
   }
 
-  sideMenu()
-  {
+  sideMenu() {
     this.navigate =
-    [
-      {
-        title : "Home",
-        url   : "/home"
-      },
-      {
-        title : "About",
-        url   : "/about"
-      },
-      {
-        title : "Contacts",
-        url   : "/contacts"
-      },
-      {
-        title : "Login",
-        url   : "/login"
-      },
-      {
-        title : "Register",
-        url   : "/registration"
-      },
-    ]
+      [
+        {
+          title: "Home",
+          url: "/home",
+          icon: "home"
+        },
+        // {
+        //   title : "About",
+        //   url   : "/about",
+        //   icon: "profile"
+        // },
+        {
+          title: "Contacts",
+          url: "/contacts",
+          icon: "person"
+        },
+        {
+          title: "Login",
+          url: "/login",
+          icon: "log-in"
+        },
+        // {
+        //   title : "Register",
+        //   url   : "/registration",
+        //   icon: "log-in"
+        // },
+      ]
   }
 }
